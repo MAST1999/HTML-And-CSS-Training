@@ -1,4 +1,26 @@
 {
     "liveServer.settings.port": 5501,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "cSpell.words": [
+        "Veniam",
+        "adipisicing",
+        "amet",
+        "autem",
+        "consectetur",
+        "cupiditate",
+        "elit",
+        "excepturi",
+        "harum",
+        "impedit",
+        "ipsam",
+        "labore",
+        "molestias",
+        "mollitia",
+        "officia",
+        "reprehenderit",
+        "sapiente",
+        "sunt",
+        "tempora",
+        "voluptate"
+    ]
 }

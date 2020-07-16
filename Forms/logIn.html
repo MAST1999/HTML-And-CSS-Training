@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="logIn.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="logIn.css" />
     <title>Log In</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Log In Here</h1>
-    <h2>Please Log in to continue</h2>
-    <form action="/index.html" method="GET">
+    <div class="container-login">
+      <h2>Please Log in to continue</h2>
+      <form action="/index.html" method="GET">
         <label for="Username">Username: </label>
-        <input id="Username" name="Username" 
-            required type="text" placeholder="Username">
+        <input
+          id="Username"
+          name="Username"
+          required
+          type="text"
+          placeholder="Username"
+        />
         <label for="Password">Password: </label>
-        <input id="Password" name="Password" 
-            required type="password" placeholder="Password">
-        <input type="submit" value="Log in">
-        <p>If you don't have an account <a href="/Forms/registrationForm.html">Go here!</a></p>
-    </form>
-</body>
+        <input
+          id="Password"
+          name="Password"
+          required
+          type="password"
+          placeholder="Password"
+        />
+        <input type="submit" value="Log in" />
+        <p>
+          If you don't have an account
+          <a href="/Forms/registrationForm.html">Go here!</a>
+        </p>
+      </form>
+    </div>
+  </body>
 </html>
