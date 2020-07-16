@@ -111,12 +111,12 @@
    The configuration is : `box-shadow: <optional-option> <horizontal-value> <vertical-value> <shade-value> <spread-value> <color>`
 
    It needs at minimum 2 values and the first 2 values can also be negative :
-   `box-shadow: 20px 20px` or `box-shadow: -20px -20px` and the `<spread-value>` can be negative as well but the not the `<shade-value>`.</br>
+   `box-shadow: 20px 20px` or `box-shadow: -20px -20px` and the `<spread-value>` can be negative as well but the not the ~~`<shade-value>`~~.</br>
    But by default it's color is the same as the content so we must specify a color value as well if the color of our content is the same as the background color :</br>
    `box-shadow: 20px 20px black`</br>
    You can use rgba for colors and give it opacity. So you can use the shade-value and rgba at the same time.
 
-   If you want to make the shadow go inward in tho the box you can use :</br> `box-shadow: insert <the-rest-is-the-same-as-above>`</br>
+   If you want to make the shadow go inward in tho the box you can use :</br> `box-shadow: inset <the-rest-is-the-same-as-above>`</br>
    Take note that in this case the shadow will always be behind the content of the box.
 
    You can also have more than one shadow for a box : </br>
