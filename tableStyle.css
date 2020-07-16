@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table,th,td{
+    padding: 5px;
+    border: 2px solid black;
+}
+
+thead,tfoot{
+    background-color: #685454;
+    color: #ffffff;
+}
+
+.container{
+    margin: 20px;
+    border: 5px solid red;
+    padding: 20px;
+}
+
+.spanClass{
+    color: red;
+}

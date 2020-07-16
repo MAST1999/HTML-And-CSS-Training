@@ -1,0 +1,43 @@
+*{
+    color: white;
+    background-color: black;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+h1{
+    color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightgreen;
+    font-size: 2em;
+    font-weight: 500;
+    
+}
+
+h3{
+    color: limegreen;
+    font-size: 1.5em;
+}
+
+a{
+    color: darkcyan;
+    text-decoration: none ;
+}
+
+li{
+    color: goldenrod;
+    line-height: 1.4em;
+}
+
+p{
+    color: navajowhite;
+}
+

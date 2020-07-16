@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registrationCss.css">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <h1>Register Here</h1>
+    <h2>Create a new Account</h2>
+    <form action="/Forms/logIn.html" method="GET">
+        <label for="fname">First name: </label>
+        <input required id="fname" type="text" placeholder="Alex">
+        <br>
+        <label for="lname">Last name: </label>
+        <input required id="lname" type="text" placeholder="Brown">
+        <br>
+        <label for="username">Username: </label>
+        <input required id="username" type="text" placeholder="Vari123">
+        <br>
+        <label for="dateOfBirth">Date Of Birth: </label>
+        <input  id="dateOfBirth" type="date">
+        <br>
+        <label for="Male">Male </label>
+        <input name="gender" value="Male" id="Male" type="radio">
+        <label for="Female">Female </label>
+        <input name="gender" value="Female" id="Female" type="radio">
+        <label for="Other">Other </label>
+        <input name="gender" value="Other" id="Other" type="radio">
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="" id="email">
+        <br>
+        <label for="password">Password: </label>
+        <input required type="password" id="password">
+        <br>
+        <a href="termsAndConditions.html" target="_blank">Terms & Conditions</a>
+        <br>
+        <label for="terms">I agree to the terms and conditions </label>
+        <input required id="terms" type="checkbox">
+        <br>
+        <input value="Create the new account" type="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+img{
+    width: 200px;
+}
+
+.logo{
+    height: 200px;
+}
+
+#firstimg{
+    border: 500px;
+    border-color: brown;
+    
+}
+
+.cc{
+    width: 450px;
+    height: 400px;
+}
+
+label{
+    padding: 5px;
+}

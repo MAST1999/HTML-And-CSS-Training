@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tableStyle.css">
+    <title>First WebPage</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <a target="_blank" href="HTTPS://www.google.com">This is a Search Engine! </a>
+    <ul>
+        <li>Maybe it works?</li>
+        <li>Yep</li>
+    </ul>
+    <ol>
+        <li>Corona!</li>
+        <li>MAc</li>
+    </ol>
+
+    <h2>computer components</h2>
+    <ol type="I">
+        <li value="1">Case</li>
+        <ol>
+            <li value="1">Ram</li>
+            <ul>
+                <li>16 Gb at 3200 MHz</li>
+            </ul>
+            <li value="2">CPU</li>
+            <ul>
+                <li>At least an 8 Core Zen 2 processor</li>
+            </ul>
+            <li value="3">GPU</li>
+            <ul>
+                <li>At least a 5700 XT or stronger</li>
+            </ul>
+            <li value="4">Power Supply</li>
+            <ul>
+                <li>At least a 700 Watts</li>
+            </ul>
+            <li value="5">Fans</li>
+            <ul>
+                <li>At least 3 Fans</li>
+            </ul>
+            <li value="6">Storage</li>
+            <ul>
+                <li>At least 1 Tb of NVME.2 SSD</li>
+            </ul>
+            <ul>
+                <li>And a 2 tb HDD drive for Game Library</li>
+            </ul>
+            <li value="7">MotherBoard</li>
+            <ul>
+                <li>An X570 motherboard</li>
+            </ul>
+            <i>Optional : </i>
+            <ul>
+                <li>CPU Cooler</li>
+            </ul>
+        </ol>
+    </ol>
+    <ol type="I">
+        <li value="2">Monitor</li>
+    </ol>
+    <ol type="I">
+        <li value="3">Accessories</li>
+        <ol>
+            <li>Keyboard</li>
+            <li>mouse</li>
+            <li>headphones</li>
+            <li>mouse pad</li>
+        </ol>
+    </ol>
+
+    <img id="firstimg" class="logo" src="/img/website.jpg" alt="This is a image">
+    <img class="logo" src="/img/website.jpg" alt="This is a image">
+    <img class="logo2" src="/img/website.jpg" alt="This is a image">
+    <img class="cc" src="/img/Capture.jpg" alt="This is a image">
+
+    <div class="container">
+        <h2>Tables</h2>
+        <ol type="1">
+            <li value="1">
+                <h3>Simple <span class="spanClass"> table with </span> header</h3>
+                <table border="1">
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <h3>Simple table with thead, tfoot and tbody</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Header Content 1</th>
+                            <th>Header Content 2</th>
+                            <th>Header Content 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Body Content 1</td>
+                            <td>Body Content 2</td>
+                            <td>Body Content 3</td>
+                    </tbody>
+                    <tfoot>
+                        <th>Footer Content 1</th>
+                        <th>Footer Content 2</th>
+                        <th>Footer Content 3</th>
+                    </tfoot>
+                </table>
+            </li>
+            <h3>Simple table with colgroup</h3>
+            <li>
+                <table border="1">
+                    <colgroup span="4"></colgroup>
+                    <thead>
+                        <tr>
+                            <th>Header Content 1</th>
+                            <th>Header Content 2</th>
+                            <th>Header Content 3</th>
+                            <th>Header Content 4</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Content Content 1</td>
+                        <td>Content Content 2</td>
+                        <td>Content Content 3</td>
+                        <td>Content Content 4</td>
+                    </tr>
+                </table>
+            </li>
+            <h3>Simple table with colgroup and col</h3>
+            <li>
+                <table border="1">
+                    <colgroup>
+                        <col style="background-color: brown;">
+                        <col span="2">
+                    </colgroup>
+                    <tr>
+                        <th>Lime</th>
+                        <th>Lemon</th>
+                        <th>Orange</th>
+                    </tr>
+                    <tr>
+                        <th>red</th>
+                        <th>yellow</th>
+                        <th>Orange</th>
+                    </tr>
+                    <tr>
+                        <th>Mellow</th>
+                        <th>Black</th>
+                        <th>Orange</th>
+                    </tr>
+                </table>
+            </li>
+            <h3>Simple table with caption</h3>
+            <li>
+                <table border="1">
+                    <caption>
+                        This is a caption
+                    </caption>
+                    <tr>
+                        <td>Table Caption</td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+    </div>
+
+    <br>
+
+    <h2>Forms</h2>
+    <h3>Common inputs types</h3>
+    <input type="text">
+    <input type="name">
+    <input type="email">
+    <input type="password">
+    <input type="date">
+    <input type="submit">
+    <input type="color">
+
+    <br>
+
+    <h3>Simple login Form</h3>
+    <form action="http://wikipedia.org" method="POST">
+        <label for="username">Username: </label>
+        <input id="username" type="name" name="username" placeholder="user name">
+        <label for="password">Password :</label>
+        <input id="password" type="password" name="password" placeholder="password">
+        <input type="submit" value="Log in">
+    </form>
+
+    <br>
+
+    <h3>Simple Validation</h3>
+    <form action="http://wikipedia.org" method="POST">
+        <label for="username">Username: </label>
+        <input required id="username" type="name" name="username" placeholder="user name">
+        <label for="email">email: </label>
+        <input required id="email" type="email" name="email" placeholder="email">
+        <label for="password">Password :</label>
+        <input required id="password" type="password" name="password" placeholder="password">
+        <input type="submit" value="Log in">
+    </form>
+
+    <br>
+
+    <h3>Example of Radio button</h3>
+    <p>What type of Cars do you like ?</p>
+    <form action="">
+        <label for="SUV">SUV: </label>
+        <input value="SUV" name="cars" id="SUV" type="radio">
+        <label for="Truck">Truck: </label>
+        <input value="Truck" name="cars" id="Truck" type="radio">
+        <label for="Sport">Sport: </label>
+        <input value="Sport" name="cars" id="Sport" type="radio">
+        <input type="checkbox">
+        <p>What kind of color do you like your car to be ?</p>
+        <select  name="color" id="">
+            <option name="color" value="red">red</option>
+            <option name="color" value="black">black</option>
+            <option name="color" value="blue">blue</option>
+            <option name="color" value="green">green</option>
+        </select>
+
+        <textarea name="moreInfo" id="" cols="40" rows="10" ></textarea>
+
+        <button>yes</button>
+    </form>
+
+
+</body>
+
+</html>
