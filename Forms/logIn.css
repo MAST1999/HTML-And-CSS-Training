@@ -1,15 +1,28 @@
-.container-login {
-    border: 1px solid blue;
-    padding: 10px;
-    width: 400px;
-    background-color: #912a54;
-    color: white;
-    margin: 0 auto; /*this makes it go to the center, for more info go to Notes.md */
-    /* border-radius: 15px;
-    border-radius: 10px 20px 30px 40px;
-    border-radius: 10% 20% */
-    border-radius: 10px 40px;
-    box-shadow: 20px 20px 5px 10px black, -20px -20px 5px 10px red;
-    /* box-shadow: -20px -20px black; 
-    box-shadow: inset 20px 20px 5px 10px black; */
-} 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif !important; /*because of !important the 
+                                        font is always going to be roboto*/
+}
+
+#login {
+  color: white;
+  padding: 5px;
+  background-color: chocolate;
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  border: solid 2px white;
+  border-radius: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+}
+h1 {
+  text-align: center;
+  padding: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2 {
+  text-align: center;
+  padding: 1rem;
+  font-family: "Arial", Helvetica, sans-serif !important;
+}

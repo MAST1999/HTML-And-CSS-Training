@@ -83,7 +83,7 @@
    1. #### Content
       Content is what the box or block level element contains(text or other elements).
 
-1. ### Border Radius
+2. ### Border Radius
 
    Border radius determines the roundness of the four corners. They can be called with : `border-radius: <value>` and the value can be either of :
 
@@ -99,7 +99,7 @@
    `border-radius : <horizontal-value>/<vertical-value>`</br>
    `border-radius : 15px/40px`
 
-1. ### Box Shadow
+3. ### Box Shadow
 
    Adds shadow effects around an element's frame and it is defined by it's horizontal and vertical axis. It can receive inputs values of :
 
@@ -122,3 +122,17 @@
    You can also have more than one shadow for a box : </br>
    `box-shadow: <optional-option> <horizontal-value> <vertical-value> <shade-value> <spread-value> <color>, <optional-option> <horizontal-value> <vertical-value> <shade-value> <spread-value> <color>` </br>
    For example : `box-shadow: 20px 20px 5px 10px black, inset -20px -20px 5px 10px red;`
+
+4. ### Advanced selectors
+
+   There are 2 main advanced selectors : </br>
+
+   - pseudo-elements : style a specific part of the selected element(s).
+   - pseudo-classes : specifies a special state of the selected element(s).
+
+5. ### !important
+
+   It means that "this is important" and the setting marked by it will not change.</br>
+   example : `element { color: blue !important}`
+   If 2 !important are called at the same time from different places and they conflict each other the most specific one will take effect. For example if I set the color red for all the texts in `* {color: red !important}` then I set all the paragraphs to black `p {color: black !important}` then the paragraphs will turn black because the p modifier is more specific than * modifier.
+    
