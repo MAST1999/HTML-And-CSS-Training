@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
-  font-family: "Roboto", sans-serif !important; /*because of !important the 
+  font-family: "Roboto", sans-serif; /*because of !important the 
                                         font is always going to be roboto*/
+}
+/* Root */
+:root {
+  --primary-color: #0a0a0a;
+  --dark-color: #12202e;
+  --light-color: #f4f4f4;
+  --danger-color: #0dd317;
+  --success-color: #2aaa50;
+  --shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
 }
 
 #login {
@@ -14,15 +23,42 @@
   position: relative;
   border: solid 2px white;
   border-radius: 10px;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  box-shadow: var(--shadow);
 }
 h1 {
   text-align: center;
   padding: 1rem;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--primary-color);
 }
 h2 {
   text-align: center;
   padding: 1rem;
-  font-family: "Arial", Helvetica, sans-serif !important;
+  font-family: "Arial", Helvetica, sans-serif;
+  color: var(--dark-color);
+}
+div {
+  padding: 5px;
+}
+[value="Log in"] {
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: var(--danger-color);
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.btn-login {
+  display: flex;
+}
+
+.btn {
+  box-shadow: var(--shadow);
 }

@@ -134,5 +134,19 @@
 
    It means that "this is important" and the setting marked by it will not change.</br>
    example : `element { color: blue !important}`
-   If 2 !important are called at the same time from different places and they conflict each other the most specific one will take effect. For example if I set the color red for all the texts in `* {color: red !important}` then I set all the paragraphs to black `p {color: black !important}` then the paragraphs will turn black because the p modifier is more specific than * modifier.
-    
+   If 2 !important are called at the same time from different places and they conflict each other the most specific one will take effect. For example if I set the color red for all the texts in `* {color: red !important}` then I set all the paragraphs to black `p {color: black !important}` then the paragraphs will turn black because the p modifier is more specific than \* modifier.
+
+6. ### pseudo-classes
+
+   - :root
+   - :hover
+   - :focus
+   - :enabled/disabled
+   - :checked
+   - :first-child
+   - :nth-chil
+   - :last-child
+
+   #### Root
+
+   This pseudo-class is like a container which targets the highest level "parent" element in the DOM, or the document tree. So basically it targets `<html>` element and it can also hold variables for general purposes like making a color and then reusing it everywhere and if you decided to change it you just have to change that variables value. It also has **_higher specificity_**. Pseudo-class selectors (but not pseudo-elements) have a specificity equal to that of a class, which is higher than a basic element selector.
