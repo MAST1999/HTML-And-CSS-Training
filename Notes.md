@@ -136,7 +136,8 @@
 
    It means that "this is important" and the setting marked by it will not change.</br>
    example : `element { color: blue !important}`
-   If 2 !important are called at the same time from different places and they conflict each other the most specific one will take effect. For example if I set the color red for all the texts in `* {color: red !important}` then I set all the paragraphs to black `p {color: black !important}` then the paragraphs will turn black because the p modifier is more specific than \* modifier.
+   If 2 !important are called at the same time from different places and they conflict each other the most specific one will take effect. For example if I set the color red for all the texts in `* {color: red !important}` then I set all the paragraphs to black `p {color: black !important}` then the paragraphs will turn black because the p modifier is more specific than \* modifier.</br>
+   It can also directly change the `<html>` element like `background-color`.
 
 6. ### pseudo-classes
 
@@ -155,8 +156,10 @@
 
    #### Hover
 
-   This pseudo-class happens when a user hovers over a function but doesn't necessarily activate it. You can give hover class to anything in CSS.
+   This pseudo-class happens when a user hovers over a function but doesn't necessarily activate it. You can give hover class to anything in CSS. It is not standalone and has to accompany another element or attribute.</br>
+   It can be accessed like this: `<element-or-attribute>:hover{<options>}`
 
    #### Focus
 
-   As the name suggests this pseudo-class makes the browser focus on something. It's a generated figure user clicks or tabs or selects using the keyboards tab key.
+   As the name suggests this pseudo-class makes the browser focus on something. It's a generated figure user clicks or tabs or selects using the keyboards tab key. It is not standalone and has to accompany another element or attribute.</br>
+   It can be accessed like this: `<element-or-attribute>:focus{<options>}`
