@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registrationCss.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="registrationCss.css" />
     <title>Register Form</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Register Here</h1>
-    <h2>Create a new Account</h2>
-    <form action="/Forms/logIn.html" method="GET">
-        <label for="fname">First name: </label>
-        <input required id="fname" type="text" placeholder="Alex">
-        <br>
-        <label for="lname">Last name: </label>
-        <input required id="lname" type="text" placeholder="Brown">
-        <br>
-        <label for="username">Username: </label>
-        <input required id="username" type="text" placeholder="Vari123">
-        <br>
-        <label for="dateOfBirth">Date Of Birth: </label>
-        <input  id="dateOfBirth" type="date">
-        <br>
-        <label for="Male">Male </label>
-        <input name="gender" value="Male" id="Male" type="radio">
-        <label for="Female">Female </label>
-        <input name="gender" value="Female" id="Female" type="radio">
-        <label for="Other">Other </label>
-        <input name="gender" value="Other" id="Other" type="radio">
-        <br>
-        <label for="email">Email: </label>
-        <input type="email" name="" id="email">
-        <br>
-        <label for="password">Password: </label>
-        <input required type="password" id="password">
-        <br>
-        <a href="termsAndConditions.html" target="_blank">Terms & Conditions</a>
-        <br>
-        <label for="terms">I agree to the terms and conditions </label>
-        <input required id="terms" type="checkbox">
-        <br>
-        <input value="Create the new account" type="submit">
-    </form>
-</body>
-
+    <div class="container">
+      <form id="form1" action="/Forms/logIn.html" method="GET">
+        <!-- First Name -->
+        <div>
+          <label for="fname">First name: </label>
+          <input required id="fname" type="text" placeholder="Alex" />
+        </div>
+        <!-- Last Name -->
+        <div>
+          <label for="lname">Last name: </label>
+          <input required id="lname" type="text" placeholder="Brown" />
+        </div>
+        <!-- Username -->
+        <div>
+          <label for="username">Username: </label>
+          <input required id="username" type="text" placeholder="Alex123" />
+        </div>
+        <!-- Date Of Birth -->
+        <div>
+          <label for="dateOfBirth">Date Of Birth: </label>
+          <input id="dateOfBirth" type="date" />
+        </div>
+        <!-- gender -->
+        <div class="radio">
+          <label for="Male">Male </label>
+          <input name="gender" value="Male" id="Male" type="radio" />
+          <label for="Female">Female </label>
+          <input name="gender" value="Female" id="Female" type="radio" />
+          <label for="Other">Other </label>
+          <input name="gender" value="Other" id="Other" type="radio" />
+        </div>
+        <!-- Email -->
+        <div>
+          <label for="email">Email: </label>
+          <input placeholder="alex.brown@gmail.com" type="email" name="" id="email" />
+        </div>
+        <!-- Password -->
+        <div>
+          <label for="password">Password: </label>
+          <input placeholder="*********" required type="password" id="password" />
+        </div>
+        <!-- Account type -->
+        <div>
+          <label for="accountType">Account Type: </label>
+          <select name="accountType" id="accountType">
+            <option value="0" disabled>Administrator</option>
+            <option value="1">Guest</option>
+            <option value="2" selected>User</option>
+          </select>
+        </div>
+        <!-- Link To Terms and Conditions -->
+        <div>
+          <a class="tc" href="termsAndConditions.html" target="_blank"
+            >Terms & Conditions</a
+          >
+        </div>
+        <!-- Check box for Accepting T&C -->
+        <div>
+          <label for="terms">I agree to the terms and conditions </label>
+          <input required id="terms" type="checkbox" />
+        </div>
+        <!-- Submit Button -->
+        <div class="btn-submit">
+          <input class="btn" value="submit" type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

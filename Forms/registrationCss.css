@@ -1,3 +1,73 @@
-input{
-    margin: 3px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+:root {
+  --primary-color: #4c71d4;
+  --dark-color: #0d1024;
+  --light-color: #dbc4c4;
+  --danger-color: #c6d30d;
+  --success-color: #7a51ec;
+  --shadow: 0 5px 14px rgba(0, 0, 0, 0.9);
+  background-color: rgba(37, 85, 231, 0.5);
+}
+#form1{
+    border: 2px solid var(--light-color);
+    width: 300px;
+    margin: 0px auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    z-index: 2;
+    box-shadow: var(--shadow);
+}
+h1,h2{
+    text-align: center;
+    
+}
+h1{
+    box-shadow: var(--shadow);
+    font-size: 4em;
+    padding: 0.5em;
+    z-index: 3;
+    background: var(--primary-color);
+    color: car(--dark-color);
+}
+h2{
+    padding: 1em;
+    font-size: 2em;
+}
+input[type="submit"]{
+    padding: 10px 10px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    background: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+div{
+    padding: 0.6em;
+    font-weight: 800;
+}
+.radio label{
+    padding: 5px;
+}
+.tc{
+    text-decoration: none;
+    text-align: center;
+}
+.btn:hover{
+    background-color: var(--success-color);
+    box-shadow: var(--shadow);
+}
+input:hover{
+    background-color: var(--dark-color);
+}
+.tc:hover{
+    background-color: var(--success-color);
+    color: var(--light-color);
 }

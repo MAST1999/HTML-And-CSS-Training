@@ -9,9 +9,9 @@
   --primary-color: #0a0a0a;
   --dark-color: #12202e;
   --light-color: #f4f4f4;
-  --danger-color: #0dd317;
-  --success-color: #2aaa50;
-  --shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  --danger-color: #2aaa50;
+  --success-color: #0dd317;
+  --shadow: 0 5px 14px rgba(0, 0, 0, 0.9);
 }
 
 #login {
@@ -59,6 +59,22 @@ input[type="submit"] {
   display: flex;
 }
 
-.btn {
+.btn:hover {
+  box-shadow: var(--shadow);
+  background-color: var(--success-color);
+}
+
+h1{
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 0px;
+  /* box-shadow: var(--shadow); */
+}
+h1:hover{
+  box-shadow: var(--shadow);
+}
+
+#Password:hover ,#Username:hover {
   box-shadow: var(--shadow);
 }

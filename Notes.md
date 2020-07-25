@@ -42,6 +42,7 @@
       Padding is the same as margin explained above.
 
    1. #### Border
+
       Border has four sides:
    1. top
    1. right
@@ -81,6 +82,7 @@
    - color: set's borders color.
 
    1. #### Content
+
       Content is what the box or block level element contains(text or other elements).
 
 2. ### Border Radius
@@ -149,4 +151,12 @@
 
    #### Root
 
-   This pseudo-class is like a container which targets the highest level "parent" element in the DOM, or the document tree. So basically it targets `<html>` element and it can also hold variables for general purposes like making a color and then reusing it everywhere and if you decided to change it you just have to change that variables value. It also has **_higher specificity_**. Pseudo-class selectors (but not pseudo-elements) have a specificity equal to that of a class, which is higher than a basic element selector.
+   This pseudo-class is like a container which targets the highest level "parent" element in the DOM, or the document tree. So basically it targets `<html>` element and it can also hold variables for general purposes like making a color and then reusing it everywhere and if you decided to change it you just have to change that variables value. It also has **_higher specificity_**. Pseudo-class selectors (but not pseudo-elements) have a specificity equal to that of a class, which is higher than a basic element selector.</br>It can be used like this: `root: {--success-color: #2aaa50}` then it can be called elsewhere in the CSS file in color sections using: `<color-attribute>: color: var(--success-color)`.
+
+   #### Hover
+
+   This pseudo-class happens when a user hovers over a function but doesn't necessarily activate it. You can give hover class to anything in CSS.
+
+   #### Focus
+
+   As the name suggests this pseudo-class makes the browser focus on something. It's a generated figure user clicks or tabs or selects using the keyboards tab key.
