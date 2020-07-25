@@ -163,3 +163,7 @@
 
    As the name suggests this pseudo-class makes the browser focus on something. It's a generated figure user clicks or tabs or selects using the keyboards tab key. It is not standalone and has to accompany another element or attribute.</br>
    It can be accessed like this: `<element-or-attribute>:focus{<options>}`
+
+   #### Enabled and Disabled
+
+   It is any element that can be selected or disabled or focused on. Disabled is the opposite of enabled so It is any element that can be selected or enabled or focused on.

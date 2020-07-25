@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
-  font-family: "Roboto", sans-serif; 
+  font-family: "Roboto", sans-serif;
   margin: 0px;
 }
 /* Root */
@@ -9,8 +9,9 @@
   --primary-color: #4c71d4;
   --dark-color: #0d1024;
   --light-color: #dbc4c4;
-  --danger-color: #c6d30d;
+  --danger-color: #990e0e;
   --success-color: #7a51ec;
+  --disabled-color: #515574;
   --shadow: 0 5px 14px rgba(0, 0, 0, 0.9);
   background-color: rgba(37, 85, 231, 0.5);
 }
@@ -67,31 +68,41 @@ input[type="submit"] {
   background-color: var(--success-color);
 }
 
-
-h1:hover{
+h1:hover {
   box-shadow: var(--shadow);
 }
 
-#Password:hover ,#Username:hover {
+#Password:hover,
+#Username:hover {
   box-shadow: var(--shadow);
 }
 
 /* Focus */
-input:focus{
-    background-color: var(--dark-color);
-    color: var(--light-color);
+input:focus {
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
 
 /* Hover */
-input:hover{
-    background-color: var(--dark-color);
-    color: var(--light-color);
+input:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
-.regRef:hover{
+.regRef:hover {
   background-color: var(--success-color);
   color: var(--light-color);
 }
 div {
   padding: 0.6em;
   font-weight: 800;
+}
+
+#regPar {
+  margin-bottom: 5px;
+}
+/* input:enabled {
+  border: solid 1px var(--success-color); */
+}
+input:disabled {
+  color: var(--disabled-color) !important;
 }
