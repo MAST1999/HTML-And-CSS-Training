@@ -167,3 +167,7 @@
    #### Enabled and Disabled
 
    It is any element that can be selected or disabled or focused on. Disabled is the opposite of enabled so It is any element that can be selected or enabled or focused on.
+
+   #### Checked
+
+   It represents any radio button or checked box or select list with options which can be checked or unchecked.

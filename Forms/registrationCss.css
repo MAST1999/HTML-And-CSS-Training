@@ -9,7 +9,7 @@
   --dark-color: #0d1024;
   --light-color: #dbc4c4;
   --danger-color: #990e0e;
-  --success-color: #7a51ec;
+  --success-color: #371770;
   --disabled-color: #515574;
   --shadow: 0 5px 14px rgba(0, 0, 0, 0.9);
   background-color: rgba(37, 85, 231, 0.5);
@@ -80,4 +80,16 @@ input:hover {
 input:focus {
   background-color: var(--dark-color);
   color: var(--light-color);
+}
+
+#terms[type="checkbox"]:checked + label {
+  box-shadow: var(--shadow);
+  color: var(--success-color);
+}
+
+input[type="radio"]:checked {
+  box-shadow: var(--shadow);
+}
+option:checked {
+  color: var(--success-color);
 }
