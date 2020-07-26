@@ -93,3 +93,16 @@ input[type="radio"]:checked {
 option:checked {
   color: var(--success-color);
 }
+
+/* First Child */
+select option:first-child{
+  color: blue;
+}
+/* nth Child */
+select option:nth-child(2){
+  color: red;
+}
+/* Last Child */
+select option:last-child{
+  color: darkgreen;
+}

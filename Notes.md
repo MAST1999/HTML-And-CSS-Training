@@ -171,3 +171,7 @@
    #### Checked
 
    It represents any radio button or checked box or select list with options which can be checked or unchecked.
+
+   #### First/nth/Last Child
+
+   It selects first/the preferred child (like 32nd child)/last child in an element like select.
